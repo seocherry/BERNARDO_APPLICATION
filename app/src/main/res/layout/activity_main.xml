@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:content=".MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+<!--        after importing the image to the drawable folder, call the image using the
+            android:src=""                                          -->
+
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="170dp"
+            android:src="@drawable/gidle_removebg_preview" />
+
+            <!--        this is the part wherein we can edit the username input box
+            so the user will be able to enter their username        -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="GIDLE FAN CLUB"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-condensed"/>
+
+            <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:hint="Username"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="15sp"
+            android:background="@drawable/shape"
+            android:padding="20dp"
+            android:inputType="text"
+            android:id="@+id/username_input"
+            android:fontFamily="sans-serif-condensed"/>
+
+        <!--      meanwhile, this is the part wherein we can edit the password input
+        box so the user will be able to enter their username        -->
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/shape"
+            android:hint="Password"
+            android:inputType="text"
+            android:padding="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="15sp"
+            android:id="@+id/password_input"
+            android:fontFamily="sans-serif-condensed" />
+
+        <!-- and then this is the clickable button so we can get the
+                information of the user after they fill up the form     -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:backgroundTint="@color/white"
+            android:textColor="#7E00BF"
+            android:padding="18dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/login_btn"
+            android:fontFamily="sans-serif-condensed"/>
+
+<!--        this part wherein the long text that was put on the string.xml-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/gidle"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:fontFamily="sans-serif-condensed"/>
+
+<!--            lines of code wherein the text "gidle members" is declared -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(G)-IDLE MEMBERS"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="50dp"
+            android:fontFamily="sans-serif-condensed" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center"/>
+
+<!--            the image and text view codes is for the member miyeon-->
+        <ImageView
+            android:layout_width="157dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:src="@drawable/my_removebg_preview"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="MIYEON"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif-condensed"/>
+<!--while, this codes are for the member minnie-->
+        <ImageView
+            android:layout_width="157dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:src="@drawable/mn_removebg_preview" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="MINNNIE"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif-condensed"/>
+            <!-- this codes are for the member soojin-->
+        <ImageView
+            android:layout_width="157dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:src="@drawable/sj_removebg_preview" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="SOOJIN"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif-condensed"/>
+            <!-- this codes are for the member soyeon-->
+        <ImageView
+            android:layout_width="157dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:src="@drawable/sy_removebg_preview__1_" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="SOYEON"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif-condensed"/>
+            <!--while, this codes are for the member yuqi-->
+        <ImageView
+            android:layout_width="157dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:src="@drawable/yq_removebg_preview" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="YUQI"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif-condensed"/>
+            <!--while, this codes are for the member shuhua-->
+        <ImageView
+            android:layout_width="157dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:src="@drawable/shua_removebg_preview" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="SHUHUA"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif-condensed"/>
+
+    </LinearLayout>
+
+</ScrollView>
